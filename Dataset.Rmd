@@ -10,6 +10,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 require(tidyverse)
 require(lattice)
+require(tigerstats)
 ```
 
 ```{r}
@@ -17,16 +18,19 @@ Homers_data <- read.csv(file="Homers_data.csv")
 my1000 <- sample(Homers_data$kkardashtemp ,size = 1000, replace=T)
 densityplot(my1000,main="original data")
 
+favstats(my1000)
 ```
 
 The resulting plot shows two peaks, making it bimodal. The peaks have bimodal distribution, meaning that there are two values in the data that have the highest frequencies rather than one. One of the peaks seems to be slighlty shorter than the other one, but for thr most part, they appear to be the same size.
 
 ```{r}
-numb = 2
+numb = 4
 Hdata   <- sample(Homers_data$kkardashtemp ,size = numb*1000, replace=T)
 mdata  <-matrix(Hdata,nrow=1000,ncol=numb)
 x.avg <- apply(mdata,1,mean)
-densityplot(x.avg,main="sample size 2")
+densityplot(x.avg,main="sample size 4")
+
+favstats(x.avg)
 ```
 
 The resulting plot has three peaks, meaning it is trimodal. The peaks have trimodal distribution. The middle peak was twice as high as the ones on the end. The peaks on the end were half as short. The left peak represents the low-low values, which happen a quarter of the time, and the right peak represents the high-high values, which happen a quarter of the time. The peak in the middle represents the low-high, high-low, which happens half of the time.
