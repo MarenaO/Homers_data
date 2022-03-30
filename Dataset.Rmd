@@ -56,6 +56,8 @@ densityplot(x.avg,main="sample size 9")
 
 favstats(x.avg)
 ```
+
+The resulting plot for sample size 9 attempts to act like a normal distribution curve, although it is not quite one. It has some small peaks near the top of the plot. According to the CLT, the standard deviation should drop to a third of the original value for sample 9. In this case it did. The original value of 41.67 dropped to a value of 13.79 in sample 9.
 ```{r}
 numb = 16
 Hdata   <- sample(Homers_data$kkardashtemp ,size = numb*1000, replace=T)
