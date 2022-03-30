@@ -44,6 +44,9 @@ densityplot(x.avg,main="sample size 4")
 
 favstats(x.avg)
 ```
+
+The resulting plot for sample 4 looks like it has 5 peaks. The peak in the center is the tallest, the peaks on the side of the center peak are the second tallest, and the peaks at the edge of the second tallest peaks are the shortest. According to the CLT, the standard deviation should drop to half the original size. In this case it did. The standard deviation of the original sample size was 41.67. In this sample size 4, the standard deviation dropped to about half of 41.67, which was 20.7.
+
 ```{r}
 numb = 9
 Hdata   <- sample(Homers_data$kkardashtemp ,size = numb*1000, replace=T)
