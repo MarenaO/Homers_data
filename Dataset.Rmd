@@ -80,4 +80,4 @@ densityplot(x.avg,main="sample size 36")
 favstats(x.avg)
 ```
 
-According to the central limit theorem
+The resulting plot for sample 36 is the plot that attempts to look like a normal distribution plot the most. It is the one with the least amount of peaks showing near the top of the plot compared to sample 9's plot and sample 16's plot. There is one big peak at the center of the plot. According to the CLT, the standard deviation for sample 36 should drop down to 1/6 of its original size. In this case it did. The original standard deviation was 41.67, and in sample 36, it dropped down to 6.71, which is about 1/6 of its original size. These samples prove the CLT.
