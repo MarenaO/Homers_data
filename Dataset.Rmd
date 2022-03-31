@@ -68,6 +68,8 @@ densityplot(x.avg,main="sample size 16")
 favstats(x.avg)
 ```
 
+The resulting plot of sample 16 also attempts to act like a normal distribution curve, although, again it is not quite there. There are a couple smaller peaks near the top of the plot. According to the CLT, the standard deviation in sample 16 should drop down to a quarter of its original size. In this case it did. The original standard deviation was 41.67, and in sample 16 it dropped down to 10.33, which is about a quarter of its original size.
+
 ```{r}
 numb = 36
 Hdata   <- sample(Homers_data$kkardashtemp ,size = numb*1000, replace=T)
