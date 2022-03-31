@@ -81,3 +81,7 @@ favstats(x.avg)
 ```
 
 The resulting plot for sample 36 is the plot that attempts to look like a normal distribution plot the most. It is the one with the least amount of peaks showing near the top of the plot compared to sample 9's plot and sample 16's plot. There is one big peak at the center of the plot. According to the CLT, the standard deviation for sample 36 should drop down to 1/6 of its original size. In this case it did. The original standard deviation was 41.67, and in sample 36, it dropped down to 6.71, which is about 1/6 of its original size. These samples prove the CLT.
+
+
+Summary: 
+The Central Limit Theorem essentially states that no matter how a sample is distributed, the distribution itself will normally distribute as the sample size goes up. With these samples, I was able to see that as the sample size increased then the curve started approaching more of a normal distribution curve. In the beginning samples (2 and 4), there was bimodal and trimodal distribution occurring, whereas in the later samples (9, 16, and 36), there was closer to a normal distribution curve happening. The CLT helped show the value the standard deviation was supposed to be as the sample size increased. I was able to see that the higher the sample got, the lower the standard deviation got.
